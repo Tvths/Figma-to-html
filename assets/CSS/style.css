@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #ffb900;
+}
 html {
   font-size: 62.5%;
 }
@@ -13,6 +16,16 @@ body {
 h1 {
   font-family: sans-serif;
   font-weight: 700;
+  color: #171100;
+  font-size: 3.8rem;
+  line-height: 1.27;
+}
+.heading-lv2 {
+  font-family: sans-serif;
+  font-weight: 700;
+  color: #171100;
+  font-size: 3.8rem;
+  line-height: 1.27;
 }
 .main-content {
   width: 1170px;
@@ -108,12 +121,12 @@ a {
   border-radius: 12px;
   padding: 24px;
 }
-.hero-main .main-content .courses .info-courses .course {
+.hero-main .info-courses .course {
   display: flex;
   height: 56px;
 }
 /* icon courses */
-.hero-main .main-content .courses .info-courses .course .icon {
+.hero-main .info-courses .icon {
   display: inline;
   width: 48px;
   height: 48px;
@@ -122,26 +135,26 @@ a {
   border-radius: 50%;
   background-color: #fff9e8;
 }
-.hero-main .main-content .courses .info-courses .course .icon-dev {
+.hero-main .info-courses .icon-dev {
   background-color: #fcefff;
 }
-.hero-main .main-content .courses .info-courses .course .icon-marketing {
+.hero-main .info-courses .icon-marketing {
   background-color: #ebeaff;
 }
 .icon img {
   padding: 12px;
 }
 /* text courses */
-.hero-main .main-content .courses .info-courses .course .amount-courses {
+.hero-main .info-courses .amount-courses {
   font-weight: 400;
 }
-.hero-main .main-content .courses .info-courses .course .title-courses {
+.hero-main .info-courses .title-courses {
   font-weight: 600;
 }
-.hero-main .main-content .courses .info-courses .course .text {
+.hero-main .info-courses .course .text {
   margin-left: 12px;
 }
-.hero-main .main-content .courses .info-courses .course .text .amount-courses {
+.hero-main .info-courses .amount-courses {
   line-height: 26px;
   font-size: 1.4rem;
 }
@@ -154,13 +167,13 @@ a {
   .amount-courses {
   line-height: 26px;
 }
-.hero-main .main-content .courses .info-courses .course .text .title-courses {
+.hero-main .info-courses .title-courses {
   width: 124px;
   line-height: 30px;
   font-size: 1.8rem;
 }
 
-.hero-main .main-content .courses .info-courses .dev {
+.hero-main .info-courses .dev {
   margin: 14px 0;
 }
 
@@ -190,7 +203,7 @@ a {
   display: flex;
 }
 .btn-label .see-courses {
-  background-color: #ffb900;
+  background-color: var(--primary-color);
   color: #fff;
   width: 180px;
   line-height: 64px;
@@ -231,4 +244,48 @@ span {
   font-weight: 400;
   font-size: 1.8rem;
   margin-left: 15px;
+}
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular .info {
+  width: 458px;
+  height: 124px;
+}
+.popular .info h2 {
+  font-size: 3.8rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+}
+.popular .info p {
+  color: #5f5b53;
+  padding-top: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+}
+.popular-top .control-btn {
+  background: transparent;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+}
+.popular-top .control-btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
 }
