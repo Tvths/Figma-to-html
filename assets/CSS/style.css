@@ -24,6 +24,7 @@ h1 {
   background-color: #fffcf4;
 }
 .header.fixed {
+  z-index: 1;
   position: sticky;
   top: -26px;
 }
@@ -229,4 +230,5 @@ span {
   font-family: Poppins;
   font-weight: 400;
   font-size: 1.8rem;
+  margin-left: 15px;
 }
