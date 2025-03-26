@@ -38,6 +38,9 @@ h1 {
   --line-clamp: 2;
   overflow: hidden;
 }
+.break-all {
+  word-break: break-all;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -353,4 +356,77 @@ span {
 .popular .info-item .foot .btn-book:hover {
   background-color: var(--primary-color);
   cursor: pointer;
+}
+/* ------------feedback------------- */
+.feedback {
+  background-color: #2e2100;
+  margin-top: 135px;
+  padding: 96px 0;
+  height: 38rem;
+}
+.feedback .feedback-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 96px 0;
+  height: 18.8rem;
+}
+.feedback .student {
+  width: 15.9rem;
+}
+.feedback .student .img-student {
+  width: 7.2rem;
+  height: 7.2rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .student .name {
+  width: 130px;
+  height: 34px;
+  color: #f7f7f7;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.89;
+  margin-top: 18px;
+}
+.feedback .student .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  width: 15.9rem;
+  height: 2.6rem;
+  font-size: 1.4rem;
+  line-height: 1.44;
+}
+.feedback .student .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+.feedback .student .dot {
+  height: 6px;
+  width: 6px;
+  background-color: #634700;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.feedback .student .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+.feedback .feedback-text {
+  display: flex;
+  width: 770px;
+  height: 188px;
+}
+.feedback .feedback-text .comma-icon {
+  width: 30px;
+  height: 28px;
+}
+.feedback .feedback-text .text {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 40px;
+  align-self: flex-end;
 }
