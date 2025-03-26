@@ -27,6 +27,17 @@ h1 {
   font-size: 3.8rem;
   line-height: 1.27;
 }
+/* deal with long text for title or p tag */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+  overflow: hidden;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -296,6 +307,7 @@ span {
   padding-top: 55px;
 }
 .popular .course-item {
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
 }
@@ -325,7 +337,8 @@ span {
   color: #5f5b53;
   font-size: 1.4rem;
   line-height: 1.44;
-  padding: 6px 0 12px;
+  padding-top: 6px;
+  margin-bottom: 12px;
 }
 .popular .info-item .foot .price {
   color: #171100;
