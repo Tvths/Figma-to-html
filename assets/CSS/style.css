@@ -10,7 +10,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
-  height: 9000px;
   overflow: auto;
 }
 .blog-item .blog-top .title,
@@ -598,4 +597,104 @@ span {
 .blog-item .dots .dot.active {
   background-color: var(--primary-color);
   cursor: default;
+}
+/* ------------footer----------- */
+.footer {
+  background-color: #2e2100;
+  padding: 96px 96px 28px;
+  height: 428px;
+}
+.footer-item .footer-top {
+  display: flex;
+  gap: 145px;
+  height: 211px;
+}
+.footer-item .left {
+  width: 267px;
+  height: 163px;
+}
+.footer-item .left .logo {
+  width: 85px;
+  height: 34px;
+}
+.footer-item .left .desc {
+  width: 267px;
+  height: 78px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 26px;
+  margin: 18px 0;
+}
+.footer-item .left .social {
+  width: 144px;
+  height: 15px;
+}
+.footer-item .left .social .social-icon {
+  max-width: 18px;
+  height: 15px;
+  margin-right: 15px;
+}
+.footer-item .right {
+  width: 758px;
+  height: 211px;
+}
+.footer-item .right .contact {
+  display: flex;
+  height: 211px;
+  gap: 130px;
+}
+.footer-item .contact-item {
+  width: 130px;
+  height: 211px;
+}
+.footer-item .contact-item .more-feature {
+  margin-bottom: 12px;
+}
+.footer-item .support {
+  width: 137px;
+  height: 211px;
+}
+.footer-item .address {
+  width: 231px;
+  height: 199px;
+}
+.footer-item .contact-item .title {
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 28px;
+}
+.footer-item .contact-item .hr {
+  width: 130px;
+  height: 1px;
+  background-color: #59554b;
+  margin: 14px 0 28px;
+}
+.footer-item .contact-item a {
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 26px;
+  margin-left: 0;
+  display: inline;
+}
+.footer-item .contact-item .more-feature {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-item .address strong {
+  font-weight: 600;
+  color: #ffffff;
+}
+.footer-item .hr {
+  margin-top: 38px;
+  height: 1px;
+  background-color: #59554b;
+}
+.footer-item .footer-bottom {
+  width: 357px;
+  height: 26px;
+  margin: 28px auto 0;
+  color: #807d74;
+  font-size: 1.4rem;
+  line-height: 26px;
 }
